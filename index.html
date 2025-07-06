@@ -1,58 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Julian Lucero | Biostatistician & Data Scientist</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header>
-  <div class="header-container">
-    <img src="images/JL_logo.png" alt="Julian Lucero Logo" class="logo">
-    <div class="header-text">
-      <h1>Julian Lucero</h1>
-      <p>Biostatistician & Data Scientist</p>
-    </div>
-  </div>
-</header>
+/* GENERAL STYLES */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  background: #ffffff;
+  color: #333;
+  line-height: 1.6;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>I’m Julian Lucero, a Biostatistician and Data Scientist passionate about turning complex health and environmental data into actionable insights. Currently, I work as a Statistical Analyst II at the Colorado Department of Public Health and Environment, where I build robust data pipelines, perform advanced statistical modeling, and design interactive dashboards that help inform public health decisions.</p>
+a {
+  color: #007acc;
+  text-decoration: none;
+}
 
-      <p>With a Master of Public Health in Epidemiology and Biostatistics (MPH, CUNY Graduate School of Public Health, 2025) and strong technical expertise in R, Python, SAS, SQL, and Tableau, I bridge rigorous biostatistical methods with practical data science solutions to drive meaningful change.</p>
-    </section>
+a:hover {
+  text-decoration: underline;
+}
 
-    <section>
-      <h2>My Work</h2>
-      <ul>
-        <li>Projects showcasing statistical analysis, regression modeling, and automated reporting for real-world public health challenges.</li>
-        <li>Dashboards and data visualizations that communicate insights clearly to stakeholders.</li>
-        <li>Case studies and research highlights from my experience supporting outbreak investigations, environmental health monitoring, and population-level risk prediction.</li>
-      </ul>
-    </section>
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
 
-    <section>
-      <h2>Technical Skills</h2>
-      <ul>
-        <li><strong>Languages & Tools:</strong> R, Python, SQL, SAS, Tableau</li>
-        <li><strong>Core Skills:</strong> Data wrangling, biostatistical modeling, regression analysis, research design, data storytelling</li>
-        <li><strong>Certifications:</strong> IBM Data Science Professional Certificate, Google Data Analytics Professional Certificate, IBM Machine Learning</li>
-      </ul>
-    </section>
+h2 {
+  font-size: 1.5rem;
+  border-bottom: 2px solid #007acc;
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+}
 
-    <section>
-      <h2>Let’s Connect</h2>
-      <p>Email: <a href="mailto:Julianlucero2400@gmail.com">Julianlucero2400@gmail.com</a></p>
-      <p><a href="https://www.linkedin.com/in/julianlucero24">LinkedIn Profile</a></p>
-    </section>
-  </main>
+h3 {
+  margin-top: 0;
+}
 
-  <footer>
-    <p>&copy; 2025 Julian Lucero</p>
-  </footer>
-</body>
-</html>
+/* HEADER SECTION */
+header {
+  margin-bottom: 2rem;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+.header-text h1 {
+  margin: 0;
+}
+
+.header-text p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* SECTIONS */
+ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+/* PROJECT CARDS */
+.project {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.project a {
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    width: 100px;
+  }
+}
 
